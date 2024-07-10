@@ -16,7 +16,7 @@
             $conexao = mysqli_connect("localhost", "root", "ifsuldeminas", "scif");
 
             if($conexao) {
-                echo "Conexão bem sucedida!";
+                echo "Conexão bem sucedida! </br>";
                 $resultado = mysqli_query($conexao, "SELECT * FROM produto");
                 if($resultado) {
                     $campos = mysqli_fetch_fields($resultado);
